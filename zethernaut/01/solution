@@ -1,0 +1,8 @@
+#display the abi
+contract.abi
+#display code
+contract.password()
+#Authenticate
+contract.authenticate("ethernaut0")
+#check when transaction confirm
+contract.getCleared()

