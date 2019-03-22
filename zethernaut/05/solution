@@ -1,0 +1,8 @@
+the issue in this contract is that the changeOwner is changing the ownership
+if the msg.sender doesn't match the tx.origin
+We just have to call this contract with an other contract and pass our address
+as argument
+
+_owner will be our address passed as parameter
+tx.origin will be the address of the smart contract as EVM get the address at the top of the stack
+So we go into the if and become owner of the contract
