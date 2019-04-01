@@ -1,0 +1,5 @@
+using json rpc you can inspect storage with index
+
+The private password is located in position 1 so:
+
+curl -X POST "Content-Type: application/json" "https://ropsten.infura.io/v3/<MYTOKEN>" --data '{"jsonrpc":"2.0","method":"eth_getStorageAt","params":["0xaf36c816eb2e4a5636daf51f25b88a883f2a4ba8", "0x1", "latest"],"id":1}'
