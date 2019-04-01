@@ -1,0 +1,17 @@
+Use a payable fallback to provide fund to the contract then use the selfdestruct to forward fund to
+the contract :)
+
+pragma solidity ^0.4.22;
+
+contract Destroy{
+
+
+    function destroyIt (address _sendToThisAddress) public{
+        selfdestruct(_sendToThisAddress);
+    }
+
+
+    function () public payable {
+        
+    }
+}
