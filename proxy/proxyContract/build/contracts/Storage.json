@@ -32,15 +32,15 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.12+commit.7709ece9\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"_initialized\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/gabba/git/ethereum/proxy/proxyContract/contracts/storage.sol\":\"Storage\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/gabba/git/ethereum/proxy/proxyContract/contracts/storage.sol\":{\"keccak256\":\"0x0935d2f35ad1f8df323d7c82701ed8ed4a3bd2661933c6553e31d0d0fb06dae8\",\"urls\":[\"bzz-raw://5c85b8cab563e3fe39223b2c8298cca236ba17f99230995198675292fb95106d\",\"dweb:/ipfs/QmXv7jnqvJis41mTmcy9nbFU6EZZRt3PVicpja7Z4FPmso\"]}},\"version\":1}",
-  "bytecode": "0x608060405234801561001057600080fd5b5061010d806100206000396000f3fe6080604052348015600f57600080fd5b506004361060325760003560e01c80633072cf601460375780638da5cb5b146057575b600080fd5b603d609f565b604051808215151515815260200191505060405180910390f35b605d60b2565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b600560149054906101000a900460ff1681565b600560009054906101000a900473ffffffffffffffffffffffffffffffffffffffff168156fea265627a7a72315820dfddd4a95ce67cfc901d608a218888dcdb70fa3fdceac6d18ca2295bd2c80e9564736f6c634300050c0032",
-  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060325760003560e01c80633072cf601460375780638da5cb5b146057575b600080fd5b603d609f565b604051808215151515815260200191505060405180910390f35b605d60b2565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b600560149054906101000a900460ff1681565b600560009054906101000a900473ffffffffffffffffffffffffffffffffffffffff168156fea265627a7a72315820dfddd4a95ce67cfc901d608a218888dcdb70fa3fdceac6d18ca2295bd2c80e9564736f6c634300050c0032",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.12+commit.7709ece9\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"_initialized\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/gabba/git/crypto/ethereum/proxy/proxyContract/contracts/storage.sol\":\"Storage\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/gabba/git/crypto/ethereum/proxy/proxyContract/contracts/storage.sol\":{\"keccak256\":\"0x0935d2f35ad1f8df323d7c82701ed8ed4a3bd2661933c6553e31d0d0fb06dae8\",\"urls\":[\"bzz-raw://5c85b8cab563e3fe39223b2c8298cca236ba17f99230995198675292fb95106d\",\"dweb:/ipfs/QmXv7jnqvJis41mTmcy9nbFU6EZZRt3PVicpja7Z4FPmso\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5061010d806100206000396000f3fe6080604052348015600f57600080fd5b506004361060325760003560e01c80633072cf601460375780638da5cb5b146057575b600080fd5b603d609f565b604051808215151515815260200191505060405180910390f35b605d60b2565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b600560149054906101000a900460ff1681565b600560009054906101000a900473ffffffffffffffffffffffffffffffffffffffff168156fea265627a7a72315820accf4fd599bf6125559c6cf7f24993423e5d981769dbfba5316bf1d1a1dda57864736f6c634300050c0032",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060325760003560e01c80633072cf601460375780638da5cb5b146057575b600080fd5b603d609f565b604051808215151515815260200191505060405180910390f35b605d60b2565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b600560149054906101000a900460ff1681565b600560009054906101000a900473ffffffffffffffffffffffffffffffffffffffff168156fea265627a7a72315820accf4fd599bf6125559c6cf7f24993423e5d981769dbfba5316bf1d1a1dda57864736f6c634300050c0032",
   "sourceMap": "25:286:5:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;25:286:5;;;;;;;",
   "deployedSourceMap": "25:286:5:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;25:286:5;;;;;;;;;;;;;;;;;;;;;;;;284:24;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;261:20;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;284:24;;;;;;;;;;;;;:::o;261:20::-;;;;;;;;;;;;;:::o",
   "source": "pragma solidity 0.5.12;\n\ncontract Storage {\n\tmapping (string => uint256) _uintStorage;\n\tmapping (string => address) _addressStorage;\n\tmapping (string => bool) _boolStorage;\n\tmapping (string => string) _stringStorage;\n\tmapping (string => bytes4) _bytesStorage;\n\taddress public owner;\n\tbool public _initialized;\n}",
-  "sourcePath": "/Users/gabba/git/ethereum/proxy/proxyContract/contracts/storage.sol",
+  "sourcePath": "/Users/gabba/git/crypto/ethereum/proxy/proxyContract/contracts/storage.sol",
   "ast": {
-    "absolutePath": "/Users/gabba/git/ethereum/proxy/proxyContract/contracts/storage.sol",
+    "absolutePath": "/Users/gabba/git/crypto/ethereum/proxy/proxyContract/contracts/storage.sol",
     "exportedSymbols": {
       "Storage": [
         257
@@ -359,7 +359,7 @@
     "src": "0:311:5"
   },
   "legacyAST": {
-    "absolutePath": "/Users/gabba/git/ethereum/proxy/proxyContract/contracts/storage.sol",
+    "absolutePath": "/Users/gabba/git/crypto/ethereum/proxy/proxyContract/contracts/storage.sol",
     "exportedSymbols": {
       "Storage": [
         257
@@ -682,8 +682,8 @@
     "version": "0.5.12+commit.7709ece9.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.0.23",
-  "updatedAt": "2020-05-02T09:06:22.263Z",
+  "schemaVersion": "3.0.18-next.1",
+  "updatedAt": "2020-05-14T04:51:16.419Z",
   "devdoc": {
     "methods": {}
   },

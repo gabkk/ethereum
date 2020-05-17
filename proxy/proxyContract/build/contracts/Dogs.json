@@ -68,15 +68,15 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.12+commit.7709ece9\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"constant\":true,\"inputs\":[],\"name\":\"_initialized\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getNumberOfDogs\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"toSet\",\"type\":\"uint256\"}],\"name\":\"setNumberOfDogs\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/gabba/git/ethereum/proxy/proxyContract/contracts/Dogs.sol\":\"Dogs\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/gabba/git/ethereum/proxy/proxyContract/contracts/Dogs.sol\":{\"keccak256\":\"0x53afc63891d5d8cc4c2010541a8b52b2d8e9e5d4bc85b44a29913c8a4342f51d\",\"urls\":[\"bzz-raw://053234780ffc77cdb23e8b0fe5e82584e805a37dbd1a9456a80fe2f42f8be108\",\"dweb:/ipfs/QmQmd7zTSi7RyCmH4bEX8vpZ5bUnKZrX1GTKpxEqdViy9e\"]},\"/Users/gabba/git/ethereum/proxy/proxyContract/contracts/Storage.sol\":{\"keccak256\":\"0x0935d2f35ad1f8df323d7c82701ed8ed4a3bd2661933c6553e31d0d0fb06dae8\",\"urls\":[\"bzz-raw://5c85b8cab563e3fe39223b2c8298cca236ba17f99230995198675292fb95106d\",\"dweb:/ipfs/QmXv7jnqvJis41mTmcy9nbFU6EZZRt3PVicpja7Z4FPmso\"]}},\"version\":1}",
-  "bytecode": "0x608060405234801561001057600080fd5b5033600560006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550610202806100616000396000f3fe608060405234801561001057600080fd5b506004361061004c5760003560e01c806314861b22146100515780631680a5ed1461007f5780633072cf601461009d5780638da5cb5b146100bf575b600080fd5b61007d6004803603602081101561006757600080fd5b8101908080359060200190929190505050610109565b005b61008761014f565b6040518082815260200191505060405180910390f35b6100a5610194565b604051808215151515815260200191505060405180910390f35b6100c76101a7565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b80600060405180807f446f677300000000000000000000000000000000000000000000000000000000815250600401905090815260200160405180910390208190555050565b60008060405180807f446f6773000000000000000000000000000000000000000000000000000000008152506004019050908152602001604051809103902054905090565b600560149054906101000a900460ff1681565b600560009054906101000a900473ffffffffffffffffffffffffffffffffffffffff168156fea265627a7a72315820f4e6278326ac6dcd7feae4837570d1ca1997ebfcbd504c90712970b7abdbb80f64736f6c634300050c0032",
-  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061004c5760003560e01c806314861b22146100515780631680a5ed1461007f5780633072cf601461009d5780638da5cb5b146100bf575b600080fd5b61007d6004803603602081101561006757600080fd5b8101908080359060200190929190505050610109565b005b61008761014f565b6040518082815260200191505060405180910390f35b6100a5610194565b604051808215151515815260200191505060405180910390f35b6100c76101a7565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b80600060405180807f446f677300000000000000000000000000000000000000000000000000000000815250600401905090815260200160405180910390208190555050565b60008060405180807f446f6773000000000000000000000000000000000000000000000000000000008152506004019050908152602001604051809103902054905090565b600560149054906101000a900460ff1681565b600560009054906101000a900473ffffffffffffffffffffffffffffffffffffffff168156fea265627a7a72315820f4e6278326ac6dcd7feae4837570d1ca1997ebfcbd504c90712970b7abdbb80f64736f6c634300050c0032",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.12+commit.7709ece9\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"constant\":true,\"inputs\":[],\"name\":\"_initialized\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getNumberOfDogs\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"toSet\",\"type\":\"uint256\"}],\"name\":\"setNumberOfDogs\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/gabba/git/crypto/ethereum/proxy/proxyContract/contracts/Dogs.sol\":\"Dogs\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/gabba/git/crypto/ethereum/proxy/proxyContract/contracts/Dogs.sol\":{\"keccak256\":\"0x53afc63891d5d8cc4c2010541a8b52b2d8e9e5d4bc85b44a29913c8a4342f51d\",\"urls\":[\"bzz-raw://053234780ffc77cdb23e8b0fe5e82584e805a37dbd1a9456a80fe2f42f8be108\",\"dweb:/ipfs/QmQmd7zTSi7RyCmH4bEX8vpZ5bUnKZrX1GTKpxEqdViy9e\"]},\"/Users/gabba/git/crypto/ethereum/proxy/proxyContract/contracts/Storage.sol\":{\"keccak256\":\"0x0935d2f35ad1f8df323d7c82701ed8ed4a3bd2661933c6553e31d0d0fb06dae8\",\"urls\":[\"bzz-raw://5c85b8cab563e3fe39223b2c8298cca236ba17f99230995198675292fb95106d\",\"dweb:/ipfs/QmXv7jnqvJis41mTmcy9nbFU6EZZRt3PVicpja7Z4FPmso\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5033600560006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550610202806100616000396000f3fe608060405234801561001057600080fd5b506004361061004c5760003560e01c806314861b22146100515780631680a5ed1461007f5780633072cf601461009d5780638da5cb5b146100bf575b600080fd5b61007d6004803603602081101561006757600080fd5b8101908080359060200190929190505050610109565b005b61008761014f565b6040518082815260200191505060405180910390f35b6100a5610194565b604051808215151515815260200191505060405180910390f35b6100c76101a7565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b80600060405180807f446f677300000000000000000000000000000000000000000000000000000000815250600401905090815260200160405180910390208190555050565b60008060405180807f446f6773000000000000000000000000000000000000000000000000000000008152506004019050908152602001604051809103902054905090565b600560149054906101000a900460ff1681565b600560009054906101000a900473ffffffffffffffffffffffffffffffffffffffff168156fea265627a7a72315820400febd16c07141cb61835710d26ef19765f9b3d01412c497f846f14b279bf6264736f6c634300050c0032",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061004c5760003560e01c806314861b22146100515780631680a5ed1461007f5780633072cf601461009d5780638da5cb5b146100bf575b600080fd5b61007d6004803603602081101561006757600080fd5b8101908080359060200190929190505050610109565b005b61008761014f565b6040518082815260200191505060405180910390f35b6100a5610194565b604051808215151515815260200191505060405180910390f35b6100c76101a7565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b80600060405180807f446f677300000000000000000000000000000000000000000000000000000000815250600401905090815260200160405180910390208190555050565b60008060405180807f446f6773000000000000000000000000000000000000000000000000000000008152506004019050908152602001604051809103902054905090565b600560149054906101000a900460ff1681565b600560009054906101000a900473ffffffffffffffffffffffffffffffffffffffff168156fea265627a7a72315820400febd16c07141cb61835710d26ef19765f9b3d01412c497f846f14b279bf6264736f6c634300050c0032",
   "sourceMap": "50:324:0:-;;;143:47;8:9:-1;5:2;;;30:1;27;20:12;5:2;143:47:0;176:10;168:5;;:18;;;;;;;;;;;;;;;;;;50:324;;;;;;",
   "deployedSourceMap": "50:324:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;50:324:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;287:83;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;287:83:0;;;;;;;;;;;;;;;;;:::i;:::-;;193:91;;;:::i;:::-;;;;;;;;;;;;;;;;;;;284:24:4;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;261:20;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;287:83:0;361:5;338:12;:20;;;;;;;;;;;;;;;;;;;;;;;;:28;;;;287:83;:::o;193:91::-;240:7;260:12;:20;;;;;;;;;;;;;;;;;;;;;;;;;253:27;;193:91;:::o;284:24:4:-;;;;;;;;;;;;;:::o;261:20::-;;;;;;;;;;;;;:::o",
   "source": "pragma solidity 0.5.12;\n\nimport \"./Storage.sol\";\n\ncontract Dogs is Storage {\n\n\tmodifier onlyOwner(){\n\t\trequire(msg.sender == owner);\n\t\t_;\n\t}\n\n\tconstructor() public {\n\t\towner = msg.sender;\n\t}\n\n\tfunction getNumberOfDogs() public view returns(uint256) {\n\t\treturn _uintStorage[\"Dogs\"];\n\t}\n\n\tfunction setNumberOfDogs(uint256 toSet) public {\n\t\t_uintStorage[\"Dogs\"] = toSet;\n\t}\n\n\n}",
-  "sourcePath": "/Users/gabba/git/ethereum/proxy/proxyContract/contracts/Dogs.sol",
+  "sourcePath": "/Users/gabba/git/crypto/ethereum/proxy/proxyContract/contracts/Dogs.sol",
   "ast": {
-    "absolutePath": "/Users/gabba/git/ethereum/proxy/proxyContract/contracts/Dogs.sol",
+    "absolutePath": "/Users/gabba/git/crypto/ethereum/proxy/proxyContract/contracts/Dogs.sol",
     "exportedSymbols": {
       "Dogs": [
         47
@@ -96,7 +96,7 @@
         "src": "0:23:0"
       },
       {
-        "absolutePath": "/Users/gabba/git/ethereum/proxy/proxyContract/contracts/Storage.sol",
+        "absolutePath": "/Users/gabba/git/crypto/ethereum/proxy/proxyContract/contracts/Storage.sol",
         "file": "./Storage.sol",
         "id": 2,
         "nodeType": "ImportDirective",
@@ -624,7 +624,7 @@
     "src": "0:374:0"
   },
   "legacyAST": {
-    "absolutePath": "/Users/gabba/git/ethereum/proxy/proxyContract/contracts/Dogs.sol",
+    "absolutePath": "/Users/gabba/git/crypto/ethereum/proxy/proxyContract/contracts/Dogs.sol",
     "exportedSymbols": {
       "Dogs": [
         47
@@ -644,7 +644,7 @@
         "src": "0:23:0"
       },
       {
-        "absolutePath": "/Users/gabba/git/ethereum/proxy/proxyContract/contracts/Storage.sol",
+        "absolutePath": "/Users/gabba/git/crypto/ethereum/proxy/proxyContract/contracts/Storage.sol",
         "file": "./Storage.sol",
         "id": 2,
         "nodeType": "ImportDirective",
@@ -1176,8 +1176,8 @@
     "version": "0.5.12+commit.7709ece9.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.0.23",
-  "updatedAt": "2020-05-02T09:06:42.447Z",
+  "schemaVersion": "3.0.18-next.1",
+  "updatedAt": "2020-05-14T05:10:57.344Z",
   "networkType": "ethereum",
   "devdoc": {
     "methods": {}
